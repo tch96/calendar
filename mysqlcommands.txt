@@ -1,0 +1,18 @@
+// data type:
+DATE, a date d where 1000-01-01 ≤ d ≤ 9999-12-31    (same format as our cell id )
+DATETIME, a date with time d where 1000-01-01 00:00:00 ≤ d ≤ 9999-12-31 23:59:59
+// the tag field is for the creative portion
+
+create table events( eventid mediumint unsigned not null auto_increment, username varchar(15) not null, dateofevent DATE not null, datetimeofevent DATETIME not null, title text not null, tag text, primary key(eventid), foreign key (username) references user(username) on delete cascade);
+
+
+//create join table for the many-to-many relationships
+
+create table matching( id mediumint unsigned not null auto_increment, username varchar(15) not null, eventid mediumint unsigned not null, foreign key (username) references user(username) on delete cascade, foreign key (eventid) references events(eventid) on delete cascade, primary key(id));
+
+https://www.w3schools.com/php/php_mysql_insert_lastid.asp
+
+insert into matching (username,eventid) values ('huydo1',3);
+
+select * from events inner join matching on events.eventid = matching.eventid where matching.username='huydo';
+

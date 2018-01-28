@@ -1,0 +1,88 @@
+#titlebar {
+  background-color: #435078;
+  border: 1px solid black;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  width:73%;
+  font-size: xx-large;
+  padding: 10px 0px 10px 10px;
+  display: block;
+}
+#loginandreg{
+  top: 500;
+}
+
+table.calTable {
+  border: 0px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout:fixed;
+}
+table.calTable td, table.calTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.calTable tbody td {
+  font-size: 13px;
+}
+table.calTable tr:nth-child(2n+3) {
+  background: #D0E4F5;
+}
+table.calTable thead {
+  background: #444970;
+  background: -moz-linear-gradient(top, #737694 0%, #565b7e 66%, #444970 100%);
+  background: -webkit-linear-gradient(top, #737694 0%, #565b7e 66%, #444970 100%);
+  background: linear-gradient(to bottom, #737694 0%, #565b7e 66%, #444970 100%);
+  border-bottom: 2px solid #444444;
+}
+table.calTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+table.calTable tfoot td {
+  font-size: 14px;
+}
+table.calTable tfoot .links {
+  text-align: right;
+}
+table.calTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.blended_grid{
+display : block;
+
+width : 90%;
+overflow : auto;
+margin : 50px auto 0 auto;
+}
+.eventList{
+float : left;
+border: 1px solid #1C6EA4;
+clear : none;
+height : 600px;
+width : 30%;
+}
+.editEvent{
+float : left;
+border: 1px solid #1C6EA4;
+clear : none;
+height : 600px;
+width : 30%;
+}
+.addEvent{
+float : left;
+border: 1px solid #1C6EA4;
+clear : none;
+height : 600px;
+width : 30%;
+}
+.bold {font-weight: bold;}
